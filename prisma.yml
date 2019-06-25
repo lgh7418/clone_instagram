@@ -1,0 +1,6 @@
+endpoint: https://us1.prisma.sh/lgh7418-84412e/clone_instagram/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/
