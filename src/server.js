@@ -5,19 +5,6 @@ import schema from "./schema";
 
 const PORT = process.env.PORT || 4000;
 
-const typeDefs = `
-    type Query{
-        hello: String!
-    }
-`;
-
-const resolvers = {
-  Query: {
-    hello: () => "Hi"
-  }
-};
-
-// const server = new GraphQLServer({ typeDefs, resolvers });
 const server = new GraphQLServer({ schema });
 
 // GraphQLServer에는 express 서버가 내장되어 있음
